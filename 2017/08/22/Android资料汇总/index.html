@@ -1,0 +1,331 @@
+<!DOCTYPE html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><script src="/lib/pace/pace.min.js?v=1.0.2"></script><link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet"><script></script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="google-site-verification" content="52RgRUw0vyLk58qV4rx6teF6RBD2WMqn3z2Z5hZunlk"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=5.1.3"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=5.1.3"><meta name="keywords" content="Android,资料,"><meta name="description" content="插件 android-selector可以根据指定颜色生成 Selector Drawable 的插件  GradleDependenciesHelperPluginGradle 依赖自动补全插件"><meta name="keywords" content="Android,资料"><meta property="og:type" content="article"><meta property="og:title" content="Android资料汇总"><meta property="og:url" content="http://www.dragonstyle.win/2017/08/22/Android资料汇总/index.html"><meta property="og:site_name" content="Dragonstyle&#39;s Home"><meta property="og:description" content="插件 android-selector可以根据指定颜色生成 Selector Drawable 的插件  GradleDependenciesHelperPluginGradle 依赖自动补全插件"><meta property="og:locale" content="zh-Hans"><meta property="og:updated_time" content="2017-12-21T07:28:38.842Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Android资料汇总"><meta name="twitter:description" content="插件 android-selector可以根据指定颜色生成 Selector Drawable 的插件  GradleDependenciesHelperPluginGradle 依赖自动补全插件"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",version:"5.1.3",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!1},fancybox:!0,tabs:!0,motion:{enable:!0,async:!0,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="http://www.dragonstyle.win/2017/08/22/Android资料汇总/"><title>Android资料汇总 | Dragonstyle's Home</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Dragonstyle's Home</span><span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">记录、分享、交流</h1></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-history"></i><br> 时间轴</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-list"></i><br> 分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-tools"><a href="/categories/工具资源/" rel="section"><i class="menu-item-icon fa fa-fw fa-briefcase"></i><br> 工具资源</a></li><li class="menu-item menu-item-media"><a href="/categories/影音/" rel="section"><i class="menu-item-icon fa fa-fw fa-music"></i><br> 影音</a></li><li class="menu-item menu-item-read"><a href="/categories/阅读/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i><br> 阅读</a></li><li class="menu-item menu-item-write"><a href="/categories/随笔/" rel="section"><i class="menu-item-icon fa fa-fw fa-pencil-square"></i><br> 随笔</a></li><li class="menu-item menu-item-idea"><a href="/categories/创想/" rel="section"><i class="menu-item-icon fa fa-fw fa-key"></i><br> 创想</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br> 站内搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://www.dragonstyle.win/2017/08/22/Android资料汇总/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Dragonstyle"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Dragonstyle's Home"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">Android资料汇总</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-22T16:57:59+08:00">2017-08-22</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">更新于&#58;</span> <time title="更新于" itemprop="dateModified" datetime="2017-12-21T15:28:38+08:00">2017-12-21</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/工具资源/" itemprop="url" rel="index"><span itemprop="name">工具资源</span></a></span> ， <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/工具资源/资源/" itemprop="url" rel="index"><span itemprop="name">资源</span></a></span> ， <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/工具资源/资源/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span></span> <span id="/2017/08/22/Android资料汇总/" class="leancloud_visitors" data-flag-title="Android资料汇总"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span> <span class="post-meta-item-text">热度&#58;</span><span class="leancloud-visitors-count"></span> <span>℃</span></span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">字数统计&#58;</span> <span title="字数统计">1,504</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i></span> <span class="post-meta-item-text">阅读时长 &asymp;</span> <span title="阅读时长">6</span></div></div></header><div class="post-body" itemprop="articleBody"><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><ul><li><p><strong><a href="https://github.com/importre/android-selector-intellij-plugin" target="_blank" rel="noopener">android-selector</a></strong><br>可以根据指定颜色生成 Selector Drawable 的插件</p></li><li><p><strong><a href="https://github.com/siosio/GradleDependenciesHelperPlugin" target="_blank" rel="noopener">GradleDependenciesHelperPlugin</a></strong><br>Gradle 依赖自动补全插件</p></li></ul><a id="more"></a><ul><li><p><strong><a href="https://github.com/zzz40500/GsonFormat" target="_blank" rel="noopener">GsonFormat</a></strong><br>根据JSONObject格式的字符串,自动生成实体类参数</p></li><li><p><strong><a href="https://github.com/winterDroid/android-drawable-importer-intellij-plugin" target="_blank" rel="noopener">Android Drawable Importer</a></strong><br>图标快捷批量导入</p></li><li><p><strong><a href="https://github.com/pedrovgs/AndroidWiFiADB" target="_blank" rel="noopener">AndroidWiFiADB</a></strong><br>使用 WiFi 连接而不需要 USB 连接 Android 设备达到安装, 运行, 调试应用的目的</p></li><li><p><strong><a href="https://github.com/pbreault/adb-idea" target="_blank" rel="noopener">adb-idea</a></strong><br>支持直接在AS面板中进行ADB操作,快捷键: <em>Mac OSX: Ctrl+Shift+A</em> Windows/Linux: Ctrl+Alt+Shift+A</p></li><li><p><strong><a href="https://plugins.jetbrains.com/plugin/8076-android-methods-count" target="_blank" rel="noopener">Android Methods Count</a></strong><br>统计 Android 依赖库中方法的总个数, 避免应用方法数超过 65K 问题</p></li><li><p><strong><a href="https://github.com/avast/android-butterknife-zelezny" target="_blank" rel="noopener">ButterKnife Zelezny</a></strong><br>ButterKnife是一个专注于Android系统的View注入框架,可以减少大量的findViewById以及setOnClickListener代码，可视化一键生成</p></li><li><p><strong><a href="https://github.com/mcharmas/android-parcelable-intellij-plugin" target="_blank" rel="noopener">Android Parcelable code generator</a></strong><br>Android中的序列化有两种方式, 分别是实现 Serializable 接口和 Parcelable 接口, 但在 Android 中是推荐使用 Parcelable, 只不过我们这种方式要比Serializable方式要繁琐, 那么有了这个插件一切就ok了</p></li><li><p><strong><a href="https://ydmmocoo.github.io/2016/06/28/Android-Studio%E6%8F%92%E4%BB%B6%E6%95%B4%E7%90%86/" target="_blank" rel="noopener">40个常用插件</a></strong></p></li></ul><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul><li><p><strong><a href="https://github.com/skylot/jadx" target="_blank" rel="noopener">jadx</a></strong><br>一个 Android 反编译神器, 不同于常见的 dex2jar, 这个反编译器生成代码的 try/catch 次数更少, View也不再是数字 id 了, 可读性更高</p></li><li><p><strong><a href="http://blog.avlyun.com/show/%E3%80%8Asv%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97%E3%80%8B/" target="_blank" rel="noopener">Smali Viewer</a></strong><br>sv 是一款免费 APK 分析软件, 对你感兴趣的 APP 分析看看它们都用了些什么, 对你学习借鉴有一定帮助</p></li><li><p><strong><a href="http://facebook.github.io/stetho/" target="_blank" rel="noopener">Stetho</a></strong><br>Stetho 是 Facebook 出品的一个强大的 Android 调试工具,使用该工具你可以在 Chrome Developer Tools 查看 App 的布局, 网络请求(仅限使用 Volley, okhttp 的网络请求库), sqlite, preference, 一切都是可视化的操作,无须自己在去使用 adb, 也不需要 root 你的设备</p></li><li><p><strong><a href="https://github.com/jshiell/checkstyle-idea" target="_blank" rel="noopener">checkstyle-idea</a></strong><br>Checkstyle-idea 是一款检查自己写的代码是否符合规范的插件, 该插件是根据 checkstyle.xml 文件来检查的, checkstyle.xml 文件可以由自己自己定义, 也可以使用一些大公司定义的规范, 如果不懂得如何定义, 可以查看 <a href="http://checkstyle.sourceforge.net/checks.html" target="_blank" rel="noopener">官方文档</a>, 该插件的详细介绍以及使用, 可以看一下咕咚大侠写的 <a href="http://gudong.name/2016/04/07/checkstyle.html" target="_blank" rel="noopener">文章</a></p></li><li><p><strong><a href="https://github.com/square/leakcanary" target="_blank" rel="noopener">LeakCanary</a></strong><br>良心企业 Square 最近刚开源的一个非常有用的工具, 强烈推荐, 帮助你在开发阶段方便的检测出内存泄露的问题, 使用起来更简单方便, 而且我们团队第一时间使用帮助我们发现了不少问题, 英文不好的这里有雷锋同志翻译的中文版 <a href="https://www.liaohuqiu.net/cn/posts/leak-canary-read-me/" target="_blank" rel="noopener">LeakCanary 中文使用说明</a></p></li></ul><h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><h3 id="资源汇总库"><a href="#资源汇总库" class="headerlink" title="资源汇总库"></a>资源汇总库</h3><ul><li><p><strong><a href="https://github.com/wasabeef/awesome-android-libraries" target="_blank" rel="noopener">awesome-android-libraries</a></strong><br>各种android库，包括网络，图片加载，日志，相机，多媒体等等</p></li><li><p><strong><a href="https://github.com/madongqiang2201/views" target="_blank" rel="noopener">views</a></strong><br>Android酷炫自定义控件(View)汇总</p></li><li><p><strong><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="noopener">android-open-project</a></strong><br>各种开源库</p></li><li><p><strong><a href="https://github.com/wasabeef/awesome-android-ui" target="_blank" rel="noopener">awesome-android-ui</a></strong><br>android UI/UX 汇总库</p></li><li><p><strong><a href="https://github.com/Freelander/Android_Data" target="_blank" rel="noopener">Android_Data</a></strong><br>android各种资源汇总</p></li><li><p><strong><a href="https://github.com/ruijun/Android-Dev-Favorites" target="_blank" rel="noopener">Android-Dev-Favorites</a></strong><br>Android开发者的收藏夹</p></li></ul><h3 id="资源细分库"><a href="#资源细分库" class="headerlink" title="资源细分库"></a>资源细分库</h3><ul><li><p><strong><a href="https://github.com/jeasonlzy/okhttp-OkGo" target="_blank" rel="noopener">okhttp-OkGo</a></strong><br>OkHttpUtils-2.0.0升级后改名OkGo，全新完美支持RxJava，比Retrofit更简单易用。该库是封装了okhttp的标准RESTful风格的网络框架，支持大文件上传下载，上传进度回调，下载进度回调，表单上传（多文件和多参数一起上传），链式调用，可以自定义返回对象，支持Https和自签名证书，支持超时自动重连，支持cookie的持久化和自动管理，支持五种缓存模式缓存网络数据，支持301和302重定向，扩展了统一的上传管理和下载管理功能</p></li><li><p><strong><a href="https://github.com/Curzibn/Luban" target="_blank" rel="noopener">Curzibn/Luban</a></strong><br>Luban，也称鲁班。该库作者一针见血的提出当前图片压缩处理的一些问题：单纯对图片进行裁切，压缩已经有很多文章介绍。但是裁切成多少，压缩成多少却很难控制好，裁切过头图片太小，质量压缩过头则显示效果太差。所以，他通过微信朋友圈发送近100张不同分辨率图片，对比原图与微信压缩后的图片逆向推算出来的压缩算法，具体的算法实现在项目中有详细说明介绍。使用上，支持普通调用方式外，也支持RxJava！</p></li><li><p><strong><a href="https://github.com/zetbaitsu/Compressor" target="_blank" rel="noopener">Compressor</a></strong><br>它可以满足动则几MB的图片高保真的压缩到几十KB的效果。</p></li><li><p><strong><a href="https://github.com/jgilfelt/android-viewbadger" target="_blank" rel="noopener">android-viewbadger</a></strong><br>消息数目小红点</p></li><li><p><strong><a href="https://github.com/tyzlmjj/PagerBottomTabStrip" target="_blank" rel="noopener">PagerBottomTabStrip</a></strong><br>PagerBottomTabStrip 是一个基本按谷歌Material Design规范完成的安卓底部导航栏控件</p></li><li><p><strong><a href="https://github.com/jarlen/PhotoEdit" target="_blank" rel="noopener">PhotoEdit</a></strong><br>图片编辑处理（添加文字，涂鸦，马赛克等等）</p></li><li><p><strong><a href="https://github.com/pedant/sweet-alert-dialog" target="_blank" rel="noopener">sweet-alert-dialog</a></strong><br>优美的对话框样式</p></li><li><p><strong><a href="https://github.com/dongjunkun/BannerLayout" target="_blank" rel="noopener">BannerLayout</a></strong><br>简洁实用的自动轮播广告栏</p></li><li><p><strong><a href="https://github.com/huazhiyuan2008/RecyclerViewCardGallery" target="_blank" rel="noopener">RecyclerViewCardGallery</a></strong><br>RecyclerView实现Card Gallery效果，替代ViewPager方案</p></li><li><p><strong><a href="https://github.com/mzule/FantasySlide" target="_blank" rel="noopener">FantasySlide</a></strong><br>一个 DrawerLayout的扩展,具有帅气的动画与创新的交互。一次手势完成滑出侧边栏与选择菜单</p></li><li><p><strong><a href="https://github.com/hnsugar/CommentListTextView" target="_blank" rel="noopener">CommentListTextView</a></strong><br>一个TextView实现朋友圈多条评论效果 朋友圈 微博 评论 comment</p></li><li><p><strong><a href="https://github.com/martin90s/ImagePicker" target="_blank" rel="noopener">ImagePicker</a></strong><br>选择头像，选择多张图，支持超大图片</p></li><li><p><strong><a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="noopener">CircleImageView</a></strong><br>圆形头像库</p></li><li><p><strong><a href="https://github.com/jeasonlzy/NineGridView" target="_blank" rel="noopener">NineGridView</a></strong><br>类似QQ空间，微信朋友圈，微博主页等，展示图片的九宫格控件，自动根据图片的数量确定图片大小和控件大小，使用Adapter模式设置图片，对外提供接口回调，支持任意的图片加载框架,如 Glide,ImageLoader,Fresco,xUtils3,Picasso 等，支持点击图片全屏预览大图。</p></li><li><p><strong><a href="https://github.com/jeasonlzy/ImagePicker" target="_blank" rel="noopener">ImagePicker</a></strong><br>完全仿微信的图片选择，并且提供了多种图片加载接口，选择图片后可以旋转，可以裁剪成矩形或圆形，可以配置各种其他的参数</p></li><li><p><strong><a href="https://github.com/code-mc/material-icon-lib" target="_blank" rel="noopener">material-icon-lib</a></strong><br>Material风格矢量图标库</p></li><li><p><strong><a href="https://github.com/ximsfei/Android-skin-support" target="_blank" rel="noopener">Android-skin-support</a></strong><br>Android换肤框架</p></li><li><p><strong><a href="https://github.com/WuXiaolong/AndroidUtils" target="_blank" rel="noopener">AndroidUtils</a></strong><br>Android常用工具类</p></li><li><p><strong><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper" target="_blank" rel="noopener">BaseRecyclerViewAdapterHelper</a></strong><br>一个强大并且灵活的RecyclerViewAdapter</p></li><li><p><strong><a href="https://github.com/orhanobut/logger" target="_blank" rel="noopener">logger</a></strong><br>简单，漂亮和强大Log日志</p></li></ul><h2 id="模拟器相关"><a href="#模拟器相关" class="headerlink" title="模拟器相关"></a>模拟器相关</h2><ul><li><strong>国内安卓模拟器连接端口</strong></li></ul><p>逍遥模拟器127.0.0.1:21503</p><p>夜神模拟器127.0.0.1:62001</p><h2 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h2><ul><li><a href="http://www.jianshu.com/p/5d26ae5e03f9" target="_blank" rel="noopener">http://www.jianshu.com/p/5d26ae5e03f9</a></li><li><a href="https://github.com/suzeyu1992/repo" target="_blank" rel="noopener">https://github.com/suzeyu1992/repo</a></li><li><a href="https://github.com/android-cn/android-dev-cn" target="_blank" rel="noopener">https://github.com/android-cn/android-dev-cn</a> 国内开发者信息</li></ul></div><div><div><div style="text-align:center;color:#ccc;font-size:14px">-------------本文结束<i class="fa fa-smile-o"></i>感谢您的阅读-------------</div></div></div><div><div style="padding:10px 0;margin:20px auto;width:90%;text-align:center"><div>很有帮助，打赏感谢！</div> <button id="rewardButton" disable="enable" onclick='var qr=document.getElementById("QR");"none"===qr.style.display?qr.style.display="block":qr.style.display="none"'> <span>打赏</span></button><div id="QR" style="display:none"><div id="wechat" style="display:inline-block"> <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Dragonstyle 微信支付"><p>微信支付</p></div><div id="alipay" style="display:inline-block"> <img id="alipay_qr" src="/images/alipay.jpg" alt="Dragonstyle 支付宝"><p>支付宝</p></div></div></div></div><div><ul class="post-copyright"><li class="post-copyright-author"> <strong>本文作者：</strong> Dragonstyle</li><li class="post-copyright-link"> <strong>本文链接：</strong> <a href="http://www.dragonstyle.win/2017/08/22/Android资料汇总/" title="Android资料汇总">http://www.dragonstyle.win/2017/08/22/Android资料汇总/</a></li><li class="post-copyright-license"> <strong>版权声明：</strong> 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Android/" rel="tag"><i class="fa fa-tag"></i> Android</a><a href="/tags/资料/" rel="tag"><i class="fa fa-tag"></i> 资料</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/2017/09/06/Android-Studio个人设置/" rel="prev" title="Android Studio个人设置">Android Studio个人设置<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"><div class="jiathis_style"> <span class="jiathis_txt">分享到：</span> <a class="jiathis_button_cqq">QQ好友</a> <a class="jiathis_button_weixin">微信</a> <a class="jiathis_button_tsina">新浪微博</a> <a class="jiathis_button_ydnote">有道云笔记</a> <a class="jiathis_button_douban">豆瓣</a> <a class="jiathis_button_fav">收藏夹</a> <a class="jiathis_button_copy">复制网址</a> <a class="jiathis_button_share">一键分享</a> <a href="http://www.jiathis.com/share?uid=" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a><a class="jiathis_counter_style"></a></div><script type="text/javascript">var jiathis_config={data_track_clickback:!0,summary:"",shortUrl:!1,hideMore:!1}</script><script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script></div></div></div><div class="comments" id="comments"><div id="lv-container" data-id="city" data-uid="MTAyMC8yODQwNy80OTc4"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Dragonstyle"><p class="site-author-name" itemprop="name">Dragonstyle</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">8</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">11</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">16</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/dragonstylecc" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="https://www.zhihu.com/people/lurenS/activities" target="_blank" title="知乎"><i class="fa fa-fw fa-globe"></i> 知乎</a></span><span class="links-of-author-item"><a href="http://www.jianshu.com/users/de4923b06bfc/timeline" target="_blank" title="简书"><i class="fa fa-fw fa-paperclip"></i> 简书</a></span><span class="links-of-author-item"><a href="http://weibo.com/chidao" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i> 微博</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-handshake-o"></i> 友情链接</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="http://www.xiaohanwz.com/" title="肖晗个人博客" target="_blank">肖晗个人博客</a></li></ul></div><div id="wangyiyun" style="max-width:100%;max-height:100px"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="260" height="86" src="//music.163.com/outchain/player?type=2&id=439915614&auto=0&height=66"></iframe></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#插件"><span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#库"><span class="nav-text">库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#资源汇总库"><span class="nav-text">资源汇总库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源细分库"><span class="nav-text">资源细分库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模拟器相关"><span class="nav-text">模拟器相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习资源"><span class="nav-text">学习资源</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love"><i class="fa fa-podcast"></i></span> <span class="author" itemprop="copyrightHolder">Dragonstyle</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-area-chart"></i></span> <span class="post-meta-item-text">博客全站字数&#58;</span> <span title="博客全站字数">16.3k</span></div><div class="footer-custom">Hosted by <a target="_blank" href="https://pages.coding.me" style="font-weight:700">Coding Pages</a></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv"><i class="fa fa-user"></i> 本站访客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人次</span><span class="site-pv"><i class="fa fa-eye"></i> 本站访客数<span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次</span></div><script type="text/javascript">!function(){var e=document.createElement("script");e.src="//tajs.qq.com/stats?sId=63485895";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script><script type="text/javascript">!function(e,t){var n,c=e.getElementsByTagName(t)[0];"function"!=typeof LivereTower&&((n=e.createElement(t)).src="https://cdn-city.livere.com/js/embed.dist.js",n.async=!0,c.parentNode.insertBefore(n,c))}(document,"script")</script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script><script>AV.initialize("9DBdjgPvO43bz1cm2SFtwkmb-gzGzoHsz","61xlhYVTGCh7L7KkeYpRcz69")</script><script>function showTime(e){var t=new AV.Query(e),n=[],o=$(".leancloud_visitors");o.each(function(){n.push($(this).attr("id").trim())}),t.containedIn("url",n),t.find().done(function(e){var t=".leancloud-visitors-count";if(0!==e.length){for(var i=0;i<e.length;i++){var s=e[i],r=s.get("url"),l=s.get("time"),c=document.getElementById(r);$(c).find(t).text(l)}for(i=0;i<n.length;i++){r=n[i],c=document.getElementById(r);var u=$(c).find(t);""==u.text()&&u.text(0)}}else o.find(t).text(0)}).fail(function(e,t){console.log("Error: "+t.code+" "+t.message)})}function addCount(e){var t=$(".leancloud_visitors"),n=t.attr("id").trim(),o=t.attr("data-flag-title").trim(),i=new AV.Query(e);i.equalTo("url",n),i.find({success:function(t){if(t.length>0){var i=t[0];i.fetchWhenSave(!0),i.increment("time"),i.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to save Visitor num, with error message: "+t.message)}})}else{var s=new e,r=new AV.ACL;r.setPublicReadAccess(!0),r.setPublicWriteAccess(!0),s.setACL(r),s.set("title",o),s.set("url",n),s.set("time",1),s.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to create")}})}},error:function(e){console.log("Error:"+e.code+" "+e.message)}})}$(function(){var e=AV.Object.extend("Counter");1==$(".leancloud_visitors").length?addCount(e):$(".post-title-link").length>1&&showTime(e)})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script><script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script><script type="text/javascript" src="/js/src/exturl.js?v=5.1.3"></script></body></html>
